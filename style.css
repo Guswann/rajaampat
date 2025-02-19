@@ -8,12 +8,16 @@
 } */
 
 body {
-  font-family: ubuntu;
+  font-family: Ubuntu
   /* background-color: #f4f4f4;
   height: 100vh;
   margin: 0;
   padding: 0;
   width: 100%; */
+}
+
+#land {
+  background-image: url('/images/bg1.jpg');
 }
 
 /* navbar */
