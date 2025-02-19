@@ -1,0 +1,166 @@
+@font-face {
+  font-family: ubuntu;
+  src: url(/font/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+} */
+
+body {
+  font-family: ubuntu;
+  /* background-color: #f4f4f4;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%; */
+}
+
+/* navbar */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #004d4dcb;
+  padding: 15px 150px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.nav,
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav .logo {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.nav .nav-link {
+  column-gap: 20px;
+  list-style: none;
+  font-weight: 400;
+}
+
+.nav .search-toggle {
+  color: white;
+  cursor: pointer;
+}
+
+.nav .search-box {
+  position: absolute;
+  right: 225px;
+  height: 45px;
+  max-width: 800px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s linear;
+}
+
+.nav.openSearch .search-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 15px 0 15px;
+}
+
+.nav-open-btn,
+.nav-close-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+
+  .nav .search-box {
+    right: 165px;
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 75px;
+  }
+
+  .nav .search-box {
+    right: 165px;
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav .nav-open-btn,
+  .nav .nav-close-btn {
+    display: block;
+  }
+
+  .nav .nav-link {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    padding-top: 50px;
+    height: 100%;
+    max-width: 280px;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #004d4d;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .nav .nav-open-btn {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .nav.openNav .nav-link {
+    left: 0;
+  }
+
+  .nav .nav-close-btn {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .nav {
+    padding: 15px 75px;
+  }
+
+  .nav .search-box {
+    right: 165px;
+    max-width: 600px;
+  }
+}
+
+/* navbar end */
+
